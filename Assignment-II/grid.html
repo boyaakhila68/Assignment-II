@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #2196F3;
+  padding: 10px;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.grid1-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid1-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.item1 {
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.grid2-container {
+  display: grid;
+  gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.griditem {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px;
+  font-size: 30px;
+}
+
+.itema {
+  grid-column: 1 / span 2;
+  grid-row: 1;
+}
+
+.itemb {
+  grid-column: 3;
+  grid-row: 1 / span 2;
+}
+
+.iteme {
+  grid-column: 1 / span 3;
+  grid-row: 3;
+}
+</style>
+<body>
+    <h1>Basic Grid</h1>
+    <div class="grid-container">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>  
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>  
+        <div class="grid-item">7</div>
+        <div class="grid-item">8</div>
+        <div class="grid-item">9</div>  
+      </div><br>
+
+      
+<h1>Grid Lines</h1>
+
+<div class="grid1-container">
+  <div class="item1">1</div>
+  <div class="item2">2</div>
+  <div class="item3">3</div>  
+  <div class="item4">4</div>
+  <div class="item5">5</div>
+  <div class="item6">6</div>
+  <div class="item7">7</div>
+  <div class="item8">8</div>  
+</div><br>
+
+<h1>A Five Items Grid Layout</h1>
+
+<div class="grid2-container">
+  <div class="griditem itema">Main</div>
+  <div class="griditem itemb">Sidebar</div>
+  <div class="griditem itemc">Menu</div>  
+  <div class="griditem itemd">Content</div>
+  <div class="griditem iteme">Footer</div>
+</div>
+      
+</body>
+</html>
